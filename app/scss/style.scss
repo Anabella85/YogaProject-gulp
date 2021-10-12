@@ -1,0 +1,504 @@
+@import "variables";
+@import "colors";
+@import "global";
+@import "typography";
+
+
+.nav-btn1{
+  background-color: rgb(116, 146, 236); 
+  width: 198px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  color:$white;
+  font-weight: bold;
+  font-size: 12px;
+  text-indent: 0.45px;
+  line-height: 1.2;
+ }
+/* Navbar section */
+.header1{
+    background: no-repeat url(../../assets/background1.png); 
+    width: 100%;
+    height: 980px;
+    position:relative;
+
+    .navbar {
+      
+      &-collapse {
+        justify-content: flex-end;
+      }
+    
+      &-nav {
+        gap: 10px;
+        font-size: 16px;
+      }
+    
+      .nav-link {
+        color: $clSecondary;
+        font-weight: 500;
+    
+        &:active {
+          color: $clPrimary;
+        }
+      }
+     
+    }
+
+    .banner-content{
+      font-size: 72px;
+      font-family: "Poppins";
+      color: rgba(76, 119, 235, 0.8);
+      line-height: 1.389;
+      text-indent: 0.45px;
+      width:421px;
+      position:absolute;
+      right:550px;
+      top:250px;
+    }
+
+    .banner-content>p{
+      color:inherit;
+
+    }
+  }
+
+  /*About */
+  .about{
+    display:flex; 
+    justify-content: center;
+    height: 973px;
+    background-image:url(../../assets/hal-vector1.png);
+    margin-top: -200px;
+    padding-top: 210px; 
+    background-repeat: no-repeat;
+    background-position: right;
+
+    &-content{
+      padding:20px;
+
+      &-title {
+        font-size: 48px;
+        font-family: "Poppins";
+        color: rgb(116, 146, 236);
+        line-height: 0.583;
+        text-align: left;
+        padding:50px 0 25px;
+      }
+
+      &-text {
+        font-size: 14px;
+        font-family: "Lato";
+        color: rgb(102, 102, 102);
+        line-height: 1.714;
+        text-align: left;
+        width: 562px;
+        height: 84px;
+        padding-bottom: 120px;
+      }
+
+      &-photo {
+        border-radius: 10px;
+        width: 570px;
+        height: 350px;
+      }
+
+    }
+
+   
+    .yoga{
+      flex-direction: column;
+      margin-top:-120px;
+      padding-left:100px;
+
+      &-reason{
+        display:grid;
+        grid-template-columns: 90px 375px;
+        grid-template-rows: 75px 36px;
+        padding: 15px;
+
+        img{
+          grid-area: 1 / 1 / 3 / 2;
+          align-self: center;
+        }
+        &-title{
+          font-size:18px;
+          font-family: 'Poppins';
+          color: $black;
+          grid-area: 1 / 2 / 2 / 3;
+          align-self: center;
+        }
+        
+        &-text{
+          grid-area: 2 / 2 / 3 / 3;
+          font-size: 14px;
+          font-family: "Lato";
+          line-height: 1.714;
+          width: 372px;
+          height: 36px;
+          align-self: center;
+        }
+
+      }
+     
+    }
+  }
+  
+/*Carousel */
+.classes { 
+  width: 100%;
+  height: auto;
+  background: no-repeat url(../../assets/bkg-carousel.png);
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+  
+
+  &-title {
+    font-size:48px;
+    color: rgb(116, 146, 236);
+    line-height: 0.583;
+    text-align: center;   
+  }
+
+  .card-title{
+    font-size: 18px;
+    color: rgb(116, 146, 236);
+    line-height: 1.333;
+    text-align: left;
+}
+.details{
+  font-size: 13px;
+  font-family: "Lato";
+  color: rgb(153, 153, 153);
+  line-height: 1.846;
+
+}
+.text{
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb(102, 102, 102);
+    line-height: 1.714;
+    text-align: left;
+    width: 272px;
+    height: 60px;
+}
+.flex-body{
+  display: flex !important;
+  justify-content: center;
+  align-items:baseline;
+}
+.card1{
+ margin:15% 1% 1%;
+ background: none;
+ border:none;
+}
+}
+/* Call to action*/
+.call-to-action{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height:1080px;
+
+  &-title {
+    font-size: 32px;
+    font-family: "Poppins";
+    color: rgb(0, 0, 0);
+    line-height: 1.125;
+    text-align: center;
+    position: absolute;
+    top: 2700.019px;
+    width: auto;
+    height: 34px;
+    z-index: 220;
+  }
+
+  &-sub-title {
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb(102, 102, 102);
+    line-height: 1.714;
+    text-align: center;
+    position: absolute;
+    top: 2748.485px;
+    width: 444px;
+    height: 35px;
+    z-index: 221;
+  }
+
+  &-btn{
+    background-color: rgb(116, 146, 236);
+    position: absolute;
+    width: 198px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    color:$white;
+    font-weight: bold;
+    font-size: 12px;
+    text-indent: 0.45px;
+    line-height: 1.2;
+    top: 2827.3px;
+  }
+  .container-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 16px;
+    position:absolute;
+    top: 2923px;
+
+    .action1 { grid-area: 1 / 1 / 2 / 2; }
+    .action2 { grid-area: 1 / 2 / 2 / 3; }
+    .action3 { grid-area: 1 / 3 / 2 / -1; }
+    .action4 { grid-area: 2 / 1 / 3 / 3; }
+    .action5 { grid-area: 2 / 3 / 3 / -1; }
+  }
+}
+
+/*Teachers section*/
+.teachers{
+  width: 100%;
+  height: 1100px;  
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background:no-repeat url(../../assets/team-background.png);
+
+  &-title{
+    font-size: 32px;
+    color: $white;
+    line-height: 1.125;
+    text-align: center;
+    width: 606px;
+    height: 33px;
+    margin-top:170px;
+
+  }
+
+  &-presentation{
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    line-height: 1.714;
+    text-align: center;
+    width: 543px;
+    height: 60px;
+    padding: 20px 0px;
+  }
+
+  &-team{
+      font-size: 14px;
+      font-family: "Poppins";
+      color: rgb(255, 255, 255);
+      line-height: 2.571;
+      text-align: center;
+      z-index: 251;
+      padding:70px 0 5px 0;
+  }
+
+  .dropdown{
+    width:100%;
+    text-align:center;
+  }
+  .btn-decoration{
+    background: none;
+    border:none;
+  }
+    .teacher-container{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      // grid-column-gap: 25px;
+      // grid-row-gap: 16px;
+      width:60%;
+      height:60%;
+      margin:210px auto;
+
+      .teacher{
+        display: grid;
+        grid-template-columns: 95px 170px;
+        grid-template-rows: repeat(2, 45px);
+
+        &-img{
+          grid-area: 1 / 1 / 3 / 2;
+          align-self: center;
+        }
+
+        &-name{
+          grid-area: 1 / 2 / 2 / 3;
+            font-size: 16px;
+            color: $black;
+            font-weight: bold; 
+            text-align: left; 
+             align-self: flex-end;
+        }
+
+        &-function{
+          grid-area: 2 / 2 / 3 / 3;
+            font-size: 14px;
+            font-family: "Lato";
+            color: rgb(153, 153, 153);
+            line-height: 1.714;
+            text-align: left;
+            align-self:flex-start;
+        }
+      }
+    }
+}
+
+/*Subscription section*/
+.subscription{
+  width: 100%;
+  height: 740px;
+  background-image: url(../../assets/background-subs.png);
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left:30%;
+  padding-top:170px;
+
+  &-title{
+    font-size: 48px;
+    font-family: "Poppins";
+    color: rgb(116, 146, 236); 
+    padding-top: 75px;
+  }
+
+  &-text{
+      font-size: 21px;
+      font-family: "Lato";
+      color: rgb(142, 162, 220);
+      line-height: 1.714;
+      width: 433px;
+      padding-top: 17px;
+  }
+  
+  &-btn{
+    padding-top: 39px;
+  }
+}
+
+.sponsors{
+  display:flex;
+  justify-content: space-evenly;
+  width:100%;
+  height:235px;
+  align-items: center;
+}
+
+.footer1{
+  background-color: #181818;
+  height:110px;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 240px;
+
+  .subscribe-email-title {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: left;
+    width: 85px;
+    height: 11px;
+  }
+  
+  .subscribe-email-text{
+    font-size: 13px;
+    font-family: "Lato";
+    color: rgb(187, 187, 187);
+    font-style: italic;
+    line-height: 1.846;
+    width: 228px;
+    height: 12px;
+    
+    padding-top:20px;
+  }
+  
+}
+
+.footer2{
+  width: 100%;
+  height: 334px;
+  background-color: #222;
+  display:flex;
+  justify-content: space-between;
+  padding: 0 240px;
+  
+
+  &-title {
+    font-size: 14px;
+    color: $white;
+    font-weight: bold;
+    line-height: 3.429;
+  }
+  &-informations{
+      font-size: 13px;
+      font-family: "Lato";
+      color: rgb(187, 187, 187);
+      line-height: 2.769;
+  }
+  &-socialmedia{
+    display: flex;
+    width: 190px;
+    height: 45px;
+    justify-content: center;
+  }
+
+  .timecast{
+    display:flex;
+    flex-direction: row;
+    width:240px;
+    justify-content: space-between;
+  }
+
+  .map {
+    width: 270px;
+    height: 170px;
+    border-radius: 10px;
+  }
+}
+
+.footer3{
+  width:100%;
+  height: 80px;
+  background-color: #181818;
+  font-size: 12px;
+  font-family: "Poppins";
+  color: $white;
+  font-weight: bold;
+  line-height: 2;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 240px;
+  
+  .copyright{
+      font-size: 12px;
+      color: $white;
+      display: flex;
+      align-content: center;
+      align-items: center;
+  }
+  .navbar-footer {
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+  .nav-link {
+    color: #bbb;
+    font-weight: 500;
+
+    &:active {
+      color: $white;
+    }
+  }
+  }
+}
+
+
